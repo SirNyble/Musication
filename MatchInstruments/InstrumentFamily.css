@@ -6,9 +6,10 @@ body
 }
 
 #familyGroup{
-    margin-left: auto;
+
+    margin-left: 27%;
     margin-right: auto;
-    width: 80%;
+    width: 66%;
     margin-top: 5%;
 }
 #familyGroup:after {
@@ -21,8 +22,12 @@ body
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
-  margin-top: 5%;
+  width: 66%;
+}
+#imageList:after {
+    content: ".";
+    display: block;
+    clear: both;
 }
 
 .family
@@ -30,18 +35,30 @@ body
   text-align: center;
   border: 2px solid #000000;
   float: left;
-  width: 48%;
+  width: 34%;
   margin: 5px ;
   border-radius: 12px;
   background-color: antiquewhite;
 }
 
-#drag1
+#guitar, #violin, #banjo, #harp, #frenchhorn, #saxophone, #tuba, #trombone,
+#xylophone, #drums, #maracas, #cymbals, #bagpipes, #flute, #clarinet, #trumpet
 {
   width: 100%;
   height: inherit;
 }
 
+.imageBox
+{
+  text-align: center;
+  border: 2px solid #000000;
+  float: left;
+  width: 100%;
+  margin: 5px ;
+  border-radius: 12px;
+  background-color: antiquewhite;
+
+}
 .answerBoxes
 {
   display: inline-block;
@@ -52,11 +69,25 @@ body
  .instrumentBox
 {
   float:left;
-  width:40%;
-  height:75px;
+  /*width:40%;*/
+  width: 130px;
+  height:80px;
   margin:6px;
   /*padding:10px;*/
   border: 5px solid rgba(0, 0, 0, 0.3);
   /*border:1px solid #aaaaaa;*/
   border-radius: 5px;
+}
+
+.instrumentBoxScrambled
+{
+  text-align: center;
+ float:left;
+ width:130px;
+ height:80px;
+ margin:6px;
+ /*padding:10px;*/
+ border: 5px solid rgba(0, 0, 0, 0.3);
+ /*border:1px solid #aaaaaa;*/
+ border-radius: 5px;
 }

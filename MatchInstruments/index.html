@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
 <head>
   <link rel="stylesheet" type="text/css" href="InstrumentFamily.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -15,8 +14,8 @@
     </div>
     <div class="answerBoxes">
       <div id="windAnswer1" class="instrumentBox wind" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)">
-        <img src="space.jpg"class="wind" draggable="true" ondragstart="drag(event)"
-         id="drag1" >
+        <!--<img src="space.jpg"class="wind" draggable="true" ondragstart="drag(event)"
+         id="drag1" > -->
       </div>
       <div id="windAnswer2" class="instrumentBox wind" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)"></div>
       <div id="windAnswer3" class="instrumentBox wind" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)"></div>
@@ -65,7 +64,80 @@
 </div>
 
 <div id="imageList">
-  <p> Here are images: </p>
+  <p> Match the images with the right family! </p>
+  <div class="imageBox">
+    <!--String family -->
+    <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="Images/guitar.jpg"class="string" draggable="true" ondragstart="drag(event)"
+       id="guitar" >
+    </div>
+    <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="Images/violin.jpg"class="string" draggable="true" ondragstart="drag(event)"
+       id="violin" >
+    </div>
+    <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="Images/banjo.jpg"class="string" draggable="true" ondragstart="drag(event)"
+       id="banjo" >
+    </div>
+    <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="Images/harp.png"class="string" draggable="true" ondragstart="drag(event)"
+       id="harp" >
+    </div>
+
+    <!--Brass -->
+    <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="Images/trumpet.jpg"class="brass" draggable="true" ondragstart="drag(event)"
+       id="trumpet" >
+    </div>
+    <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="Images/frenchhorn.jpg"class="brass" draggable="true" ondragstart="drag(event)"
+       id="frenchhorn">
+    </div>
+    <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="Images/tuba.jpg"class="brass" draggable="true" ondragstart="drag(event)"
+       id="tuba" >
+    </div>
+    <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="Images/trombone.jpg"class="brass" draggable="true" ondragstart="drag(event)"
+       id="trombone" >
+    </div>
+
+    <!--Percussion-->
+    <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="Images/cymbals.jpg"class="percussion" draggable="true" ondragstart="drag(event)"
+       id="cymbals" >
+    </div>
+    <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="Images/maracas.jpg"class="percussion" draggable="true" ondragstart="drag(event)"
+       id="maracas">
+    </div>
+    <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="Images/drums.jpg"class="percussion" draggable="true" ondragstart="drag(event)"
+       id="drums" >
+    </div>
+    <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="Images/xylophone.jpg"class="percussion" draggable="true" ondragstart="drag(event)"
+       id="xylophone" >
+    </div>
+
+    <!--Wind-->
+    <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="Images/bagpipes.jpg"class="wind" draggable="true" ondragstart="drag(event)"
+       id="bagpipes" >
+    </div>
+    <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="Images/flute.jpg"class="wind" draggable="true" ondragstart="drag(event)"
+       id="flute">
+    </div>
+    <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="Images/saxophone.jpg"class="wind" draggable="true" ondragstart="drag(event)"
+       id="saxophone" >
+    </div>
+    <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="Images/clarinet.jpg"class="wind" draggable="true" ondragstart="drag(event)"
+       id="clarinet" >
+  </div>
+  </div>
 </div>
 
 </body>
