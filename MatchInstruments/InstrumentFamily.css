@@ -1,0 +1,62 @@
+body
+{
+    background-color: lightblue;
+    margin: 0 0;
+    padding: 0;
+}
+
+#familyGroup{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 5%;
+}
+#familyGroup:after {
+    content: ".";
+    display: block;
+    clear: both;
+}
+
+#imageList{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-top: 5%;
+}
+
+.family
+{
+  text-align: center;
+  border: 2px solid #000000;
+  float: left;
+  width: 48%;
+  margin: 5px ;
+  border-radius: 12px;
+  background-color: antiquewhite;
+}
+
+#drag1
+{
+  width: 100%;
+  height: inherit;
+}
+
+.answerBoxes
+{
+  display: inline-block;
+  text-align: center;
+  width: 80%;
+  border-radius: 5px;
+}
+ .instrumentBox
+{
+  float:left;
+  width:40%;
+  height:75px;
+  margin:6px;
+  /*padding:10px;*/
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  /*border:1px solid #aaaaaa;*/
+  border-radius: 5px;
+}

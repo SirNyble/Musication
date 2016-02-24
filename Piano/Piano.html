@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href="Piano.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="Piano.js"></script>
+</head>
+<body>
+  <div id="piano">
+      <div id="redBar"></div>
+      <div id="notes">
+        <div id="C" class= "key white up"></div>
+        <div id="D" class= "key white up"></div>
+        <div id="E" class= "key white up"></div>
+        <div id="F" class= "key white up"></div>
+        <div id="G" class= "key white up"></div>
+        <div id="A" class= "key white up"></div>
+        <div id="B" class= "key white up"></div>
+      </div>
+      <div class="flats">
+        <div id="Cs" class= "key black up"></div>
+        <div id="Ds" class= "key black up"></div>
+        <div id="Fs" class= "key black up"></div>
+        <div id="Gs" class= "key black up"></div>
+        <div id="As" class= "key black up"></div>
+      </div>
+  </div>
+  <!-- Audio Found Royalty free: https://archive.org/details/Berklee44v4 -->
+  <div id="pianoSounds">
+    <audio style="display:none;" class="sounds" id="sound-C" preload="auto" controls>
+      <source src="./Notes/piano_C.wav" type="audio/ogg">
+    </audio>
+    <audio style="display:none;" class="sounds" id="sound-D" preload="auto" controls>
+      <source src="./Notes/piano_D.wav" type="audio/ogg">
+    </audio>
+    <audio style="display:none;" class="sounds" id="sound-E" preload="auto" controls>
+      <source src="./Notes/piano_E.wav" type="audio/ogg">
+    </audio>
+    <audio style="display:none;" class="sounds" id="sound-F" preload="auto" controls>
+      <source src="./Notes/piano_F.wav" type="audio/ogg">
+    </audio>
+    <audio style="display:none;" class="sounds" id="sound-G" preload="auto" controls>
+      <source src="./Notes/piano_G.wav" type="audio/ogg">
+    </audio>
+    <audio style="display:none;" class="sounds" id="sound-A" preload="auto" controls>
+      <source src="./Notes/piano_A.wav" type="audio/ogg">
+    </audio>
+    <audio style="display:none;" class="sounds" id="sound-B" preload="auto" controls>
+      <source src="./Notes/piano_B.wav" type="audio/ogg">
+    </audio>
+  </div>
+</body>
+
+</html>

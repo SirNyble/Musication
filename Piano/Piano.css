@@ -1,0 +1,83 @@
+body
+{
+    background-color: lightblue;
+    margin: 0 0;
+    padding: 0;
+}
+
+#piano
+{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+  width: 550px;
+  height: 262px;
+  background-color: #272927;
+}
+
+#notes
+{
+  margin-left: 10px;
+}
+
+#redBar
+{
+  position: fixed;
+  width: 550px;
+  height: 5px;
+  background-color: #660000;
+  z-index: 2;
+}
+
+.key
+{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.white
+{
+  float: left;
+  margin-right: 1px;
+  margin-top: 4px;
+  width: 75px;
+  height: 250px;
+  background: white;
+}
+
+.black
+{
+  position: absolute;
+  float: left;
+  width: 40px;
+  height: 165px;
+  background: black;
+  z-index: 1;
+}
+
+div.flats :nth-child(1) {
+    margin-left: 65px;
+}
+div.flats :nth-child(2) {
+    margin-left: 141px;
+}
+div.flats :nth-child(3) {
+    margin-left: 294px;
+}
+div.flats :nth-child(4) {
+    margin-left: 369px;
+}
+div.flats :nth-child(5) {
+    margin-left: 444px;
+}
+
+.up
+{
+  box-shadow: 0 -6px 2px 0px #838383 inset;
+}
+
+h1
+{
+    color: navy;
+    margin-left: 20px;
+}
