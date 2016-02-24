@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MUSICATION</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<style>
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: #000000;
+}
+#custom-bootstrap-menu.navbar-default {
+    font-size: 14px;
+    background-color: rgba(247, 94, 94, 1);
+    background: -webkit-linear-gradient(top, rgba(245, 161, 161, 1) 0%, rgba(247, 94, 94, 1) 100%);
+    background: linear-gradient(to bottom, rgba(245, 161, 161, 1) 0%, rgba(247, 94, 94, 1) 100%);
+    border-width: 0px;
+    border-radius: 12px;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: #000000;
+    background-color: rgba(247, 94, 94, 1);
+    background: -webkit-linear-gradient(top, rgba(245, 161, 161, 1) 0%, rgba(247, 94, 94, 1) 100%);
+    background: linear-gradient(to bottom, rgba(245, 161, 161, 1) 0%, rgba(247, 94, 94, 1) 100%);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: #ffffff;
+    background-color: rgba(248, 248, 248, 0);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: #000000;
+    background-color: rgba(231, 231, 231, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #ddd;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #ddd;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #f75e5e;
+}
+
+body {
+    /**background-image: url("https://s-media-cache-ak0.pinimg.com/236x/68/80/f8/6880f8f43d1273611fb3d0d4906d7f36.jpg");**/
+      color: #000000;
+      background-color: rgba(29, 188, 85, 1);
+      background: -webkit-linear-gradient(top, rgba(251, 235, 89, 1) 0%, rgba(29, 188, 85, 1) 100%);
+      background: linear-gradient(to bottom, rgba(251, 235, 89, 1) 0%,  rgba(29, 188, 85, 1) 100%);
+      background-attachment: fixed;
+
+}
+.jumbotron{
+    color: #000000;
+    background-color: #CCEBFD;
+    background-image: url("images/menu1.png");
+}
+.menuBar{
+  background-image: url("images/menu2.png");
+  background-repeat: no-repeat;
+   background-position: top;
+   width: 500px;
+   height: 246px;
+}
+  .navbar-nav {
+  width: 100%;
+  text-align: center;
+}
+.navbar-nav > li {
+  float: none;
+  display: inline-block;
+}
+
+.btn-custom {
+  background-color: #CCEBFD;
+  border-color: #CCEBFD;
+}
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active {
+  background-color: #0097e3;
+  border-color: #0086c9;
+}
+.btn-custom.disabled:hover,
+.btn-custom.disabled:focus,
+.btn-custom.disabled:active,
+.btn-custom.disabled.active,
+.btn-custom[disabled]:hover,
+.btn-custom[disabled]:focus,
+.btn-custom[disabled]:active,
+.btn-custom[disabled].active,
+fieldset[disabled] .btn-custom:hover,
+fieldset[disabled] .btn-custom:focus,
+fieldset[disabled] .btn-custom:active,
+fieldset[disabled] .btn-custom.active {
+  background-color: #00a8fc;
+  border-color: #00a8fc;
+}
+
+nk a:hover {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIO0aVV93ZWoTn0ML5QJuc5FMYlprLXJ3Xbrf76Oc4NpIrBbTXSfu9m04');
+}
+
+
+.tabs-below > .nav-tabs,
+.tabs-right > .nav-tabs,
+.tabs-left > .nav-tabs {
+  border-bottom: 0;
+}
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: none;
+  background-color: #F8F8F8;
+  min-height: 200px;
+  border-style: dashed;
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+          border-color: #000000;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+  display: block;
+  background-color: #F8F8F8;
+  min-height: 200px;
+  border-style: dashed;
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+          border-color: #4CB8B8;
+}
+
+.tabs-below > .nav-tabs {
+  border-top: 1px solid #ddd;
+}
+
+.tabs-left > .nav-tabs > li,
+.tabs-right > .nav-tabs > li {
+  float: none;
+}
+
+.tabs-left > .nav-tabs > li > a,
+.tabs-right > .nav-tabs > li > a {
+  min-width: 74px;
+  margin-right: 0;
+  margin-bottom: 3px;
+}
+
+.tabs-left > .nav-tabs {
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #ddd;
+}
+
+.tabs-left > .nav-tabs > li > a {
+  margin-right: -1px;
+  margin-left: 3px;
+  margin-top: 3px;
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+          background-color: #D1D1D1;
+}
+
+.tabs-left > .nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+
+}
+
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus {
+  border-color: #ddd transparent #ddd #ddd;
+  *border-right-color: #ffffff;
+}
+
+.cont{
+  width: 700px;
+}
+
+.back{
+  /**background-color: #F8F8F8;**/
+  min-height: 200px;
+}
+
+a{
+  color: #000000;
+}
+
+</style>
+<script>
+
+</script>
+</head>
+<body>
+
+
+  <center>
+    <div class="menuBar">
+      <br/><br/>
+      <img src="images/head.png" border="0" />
+      <br/>
+        <a href="home.html" role="button" class="btn btn-custom">Home</a>
+        <a href="activity.html" role="button" class="btn btn-custom">Next Activity</a>
+        <a href="progress.html" role="button" class="btn btn-custom">Progress</a>
+      </div>
+      <div class="container">
+<div class="cont"><h3>ACTIVITY NAME</h3>
+    <div class="tabbable tabs-left">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#a" data-toggle="tab">One</a></li>
+        <li><a href="#b" data-toggle="tab">Two</a></li>
+        <li><a href="#c" data-toggle="tab">Twee</a></li>
+      </ul>
+
+      <div class="back">
+      <div class="tab-content">
+       <div class="tab-pane active" id="a">Lorem ipsum dolor sit amet, charetra varius quam sit amet vulputate.
+       Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero.</div>
+       <div class="tab-pane" id="b">Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
+       Aliquam in felis sit amet augue.</div>
+       <div class="tab-pane" id="c">Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
+       Quisque mauris augue, molestie tincidunt condimentum vitae. </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+    </center>
+</body>
+</html>
