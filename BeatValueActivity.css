@@ -2,9 +2,112 @@
 #measure
 {
   width: 550px;
-  height: 262px;
-  background-color: #272927;
+  height: 150px;
+  margin-left: 10%;
+  margin-top: 9%;
+  background-color: white;
+  border: solid 2px;
 }
+#container{
+  text-align: center;
+  display: block;
+}
+#container::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+#imageList{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+
+#imageList:after {
+    content: ".";
+    display: block;
+    clear: both;
+}
+.imageBox
+{
+  text-align: center;
+  border: 2px solid #000000;
+  float: left;
+  width: 100%;
+  margin: 5px ;
+  border-radius: 12px;
+  background-color: antiquewhite;
+
+}
+
+.instrumentBoxScrambled
+{
+  text-align: center;
+ float:left;
+ width:130px;
+ height:80px;
+ margin:6px;
+ /*padding:10px;*/
+ border: 5px solid rgba(0, 0, 0, 0.3);
+ /*border:1px solid #aaaaaa;*/
+ border-radius: 5px;
+}
+
+
+#measureStart
+{
+  width: 12%;
+}
+#trebleclef
+{
+  /*position: absolute;*/
+  /*width: 100px;*/
+  display: inline-block;
+  float: left;
+  width: 100%;
+  height:250px;
+  margin-top: -26px;
+  /*left: 100px;*/
+}
+hr {
+  border: none;
+  background-color: #000000;
+  color: #000000;
+  height: 2px;
+  position: absolute;
+  width: 550px;
+}
+
+hr:nth-child(1) {
+    margin-top: 30px;
+}
+hr:nth-child(2) {
+    margin-top: 60px;
+}
+hr:nth-child(3) {
+    margin-top: 90px;
+}
+hr:nth-child(4)
+{
+  margin-top: 120px;
+}
+
+.note
+{
+  display: inline-block;
+  float: left;
+  width: 22%;
+}
+#note1, #note2, #note3, #note4{
+  background-color: white;
+
+}
+/*.note::after{
+  content: "";
+  display: block;
+  clear: both;
+}*/
 
 #redBar
 {

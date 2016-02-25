@@ -210,7 +210,7 @@ a{
 		The shape of a note shows how many beats it has in a bar.
 	  </div>
 	  <div class="pictureContent">
-		
+
 	  </div>
 	</div>
       	<div class="tab-pane" id="b">
@@ -239,7 +239,7 @@ a{
 	  <div class="textTitles">
 		Quarter Note
 	  </div>
-	  
+
 	  <img src="images/quarterNote.png" style="">
 
 	  <div class="textContent">
@@ -277,7 +277,56 @@ a{
 	  <div class="textTitles">
 		Note Beat Activity
 	  </div>
-	</div>
+      <div id="container">
+        <div id="measure">
+          <div>
+            <hr/>
+            <hr/>
+            <hr/>
+            <hr/>
+          </div>
+          <div id="measureStart">
+            <img id="trebleclef" src="images/trebleclef.png" />
+          </div>
+          <div id="note1" class="note">
+              <p>1</p>
+          </div>
+          <div id="note2" class="note">
+            <p>2</p>
+          </div>
+          <div id="note3" class="note">
+            <p>3</p>
+          </div>
+          <div id="note4" class="note">
+            <p>4</p>
+          </div>
+
+        </div>
+        <div id="imageList">
+          <p> Match the images with the right family! </p>
+          <div class="imageBox">
+            <!--String family -->
+            <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <img src="Images/guitar.jpg"class="string" draggable="true" ondragstart="drag(event)"
+               id="guitar" >
+            </div>
+            <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <img src="Images/violin.jpg"class="string" draggable="true" ondragstart="drag(event)"
+               id="violin" >
+            </div>
+            <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <img src="Images/banjo.jpg"class="string" draggable="true" ondragstart="drag(event)"
+               id="banjo" >
+            </div>
+            <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <img src="Images/harp.png"class="string" draggable="true" ondragstart="drag(event)"
+               id="harp" >
+            </div>
+
+
+          </div>
+        </div>
+  	   </div>
     </div>
   </div>
 </div>
