@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="Piano.js"></script>
-  <link rel="stylesheet" type="text/css" href="BeatValueActivity.css">
+  <link rel="stylesheet" type="text/css" href="InstrumentFamily.css">
+  <script src="InstrumentFamily.js"></script>
 
 <style>
 
@@ -19,6 +19,9 @@ body {
       background: -webkit-linear-gradient(top, rgba(251, 235, 89, 1) 0%, rgba(29, 188, 85, 1) 100%);
       background: linear-gradient(to bottom, rgba(251, 235, 89, 1) 0%,  rgba(29, 188, 85, 1) 100%);
       background-attachment: fixed;
+
+}
+.container{
 
 }
 .menuBar{
@@ -72,13 +75,7 @@ fieldset[disabled] .btn-custom.active {
 .tab-content > .tab-pane,
 .pill-content > .pill-pane {
   display: none;
-  background-color: #F8F8F8;
-  min-height: 200px;
-  border-style: solid;
-  -webkit-border-radius: 4px 0 0 4px;
-     -moz-border-radius: 4px 0 0 4px;
-          border-radius: 4px 0 0 4px;
-          border-color: #000000;
+  margin-left: 8px;
 }
 
 .tab-content > .active,
@@ -86,11 +83,8 @@ fieldset[disabled] .btn-custom.active {
   display: block;
   background-color: #F8F8F8;
   min-height: 200px;
-  border-style: solid;
-  -webkit-border-radius: 4px 0 0 4px;
-     -moz-border-radius: 4px 0 0 4px;
-          border-radius: 4px 0 0 4px;
-          border-color: #4CB8B8;
+  text-align: center;
+
 }
 
 .tabs-below > .nav-tabs {
@@ -117,8 +111,8 @@ fieldset[disabled] .btn-custom.active {
 
 .tabs-left > .nav-tabs > li > a {
   margin-right: 1px;
-  margin-left: 3px;
-  margin-top: 3px;
+  margin-left: -140px;
+  margin-top: 0px;
   -webkit-border-radius: 4px 0 0 4px;
      -moz-border-radius: 4px 0 0 4px;
           border-radius: 4px 0 0 4px;
@@ -139,23 +133,27 @@ fieldset[disabled] .btn-custom.active {
 }
 
 .cont{
-  width: 960px;
+  width: 800px;
 }
 
 .back{
   /**background-color: #F8F8F8;**/
-  min-height: 200px;
-  width: 700px;
-}
-.navTabs{
-  display: inline-block;
-  float: left;
-  width: 14%;
+
+  background-color: #F8F8F8;
+  min-height: 350px;
+
+  border-style: dashed;
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+          border-color: #4CB8B8;
 }
 
 a{
   color: #000000;
 }
+
+
 
 .textTitles{
   font-size: 18pt;
@@ -173,166 +171,165 @@ a{
 <body>
 
 
-  <center>
-    <div class="menuBar">
-      <br/><br/>
-      <img src="images/head.png" border="0" />
-      <br/>
-        <a href="home.html" role="button" class="btn btn-custom">Home</a>
-        <a href="activity.html" role="button" class="btn btn-custom">Next Activity</a>
-        <a href="progress.html" role="button" class="btn btn-custom">Progress</a>
-      </div>
-      <div class="container">
+<center><div class="menuBar">
+  <br/><br/>
+  <img src="images/head.png" border="0" />
+  <br/>
+    <a href="home.html" role="button" class="btn btn-custom">Home</a>
+    <a href="activity.html" role="button" class="btn btn-custom">Next Activity</a>
+    <a href="progress.html" role="button" class="btn btn-custom">Progress</a>
+  </div>
+  <div class="container">
 <div class="cont">
-  <h3>ACTIVITY NAME</h3>
-  <div class="navTabs tabbable tabs-left">
-    <ul class="nav nav-tabs">
-      <li class="active"><a href="#a" data-toggle="tab">Overview</a></li>
-      <li><a href="#b" data-toggle="tab">Whole Note</a></li>
-      <li><a href="#c" data-toggle="tab">Half Note</a></li>
-      <li><a href="#d" data-toggle="tab">Quarter Note</a></li>
-      <li><a href="#e" data-toggle="tab">Eighth Note</a></li>
-      <li><a href="#f" data-toggle="tab">Sixteenth Note</a></li>
-      <li><a href="#g" data-toggle="tab">Rests</a></li>
-      <li><a href="#h" data-toggle="tab">Activity</a></li>
-    </ul>
-  </div>
-  <div class="back">
-    <div class="tab-content">
-     	<div class="tab-pane active" id="a">
-	  <div class="textTitles">
-		<p>What is a music note?</p>
-	  </div>
-	  <div class="textContent">
-		<p>A note’s position on a music bar shows how high or low the instrument sound should be.</p>
-	  </div>
-	  <div class="pictureContent">
-		<img src="images/musicScale.jpg" style="">
-	  </div>
-	  <div class="textContent">
-		<p>The shape of a note shows how many beats it has in a bar.</p>
-	  </div>
-	  <div class="pictureContent">
-
-	  </div>
-	</div>
-      	<div class="tab-pane" id="b">
-	  <div class="textTitles">
-		<p>Whole Note</p>
-	  </div>
-	  <div class="pictureContent">
-	  	<img src="images/wholeNote.png" style="">
-	  </div>
-	  <div class="textContent">
-		<p>A whole note will take up all of the beats in a bar.</p>
-	  </div>
-	</div>
-	<div class="tab-pane" id="c">
-	  <div class="textTitles">
-		<p>Half Note</p>
-	  </div>
-	  <div class="pictureContent">
-	  	<img src="images/halfNote.png" style="">
-	  </div>
-	  <div class="textContent">
-		<p>A half note will take up half of beats of a whole note.</p>
-	  </div>
-	</div>
-	<div class="tab-pane" id="d">
-	  <div class="textTitles">
-		<p>Quarter Note</p>
-	  </div>
-
-	  <img src="images/quarterNote.png" style="">
-
-	  <div class="textContent">
-		<p>A quarter note will take up half of the beats of a half note.</p>
-	  </div>
-	</div>
-	<div class="tab-pane" id="e">
-	  <div class="textTitles">
-		<p>Eighth Note</p>
-	  </div>
-
-	  <img src="images/eighthNote.png" style="">
-
-	  <div class="textContent">
-		<p>An eighth note will take up half of the beats of a quarter note.</p>
-	  </div>
-	</div>
-	<div class="tab-pane" id="f">
-	  <div class="textTitles">
-		<p>Sixteenth Note</p>
-	  </div>
-
-	  <img src="images/sixteenthNote.png" style="">
-
-	  <div class="textContent">
-		<p>A sixteenth note will take up half of the beats of an eighth note.</p>
-	  </div>
-	</div>
-	<div class="tab-pane" id="g">
-	  <div class="textTitles">
-		<p>Rests</p>
-	  </div>
-	</div>
-	<div class="tab-pane" id="h">
-	  <div class="textTitles">
-		<p>Note Beat Activity</p>
-	  </div>
-      <div id="container">
-        <div id="measure">
-          <div>
-            <hr/>
-            <hr/>
-            <hr/>
-            <hr/>
-          </div>
-          <div id="measureStart">
-            <img id="trebleclef" src="images/trebleclef.png" />
-          </div>
-          <div id="note1" class="note">
-              <p>1</p>
-          </div>
-          <div id="note2" class="note">
-            <p>2</p>
-          </div>
-          <div id="note3" class="note">
-            <p>3</p>
-          </div>
-          <div id="note4" class="note">
-            <p>4</p>
-          </div>
-
-        </div>
-        <div id="imageList">
-          <p> Match the images with the right family! </p>
-          <div class="imageBox">
-            <!--String family -->
-            <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
-              <img src="Images/guitar.jpg"class="string" draggable="true" ondragstart="drag(event)"
-               id="guitar" >
-            </div>
-            <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
-              <img src="Images/violin.jpg"class="string" draggable="true" ondragstart="drag(event)"
-               id="violin" >
-            </div>
-            <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
-              <img src="Images/banjo.jpg"class="string" draggable="true" ondragstart="drag(event)"
-               id="banjo" >
-            </div>
-            <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
-              <img src="Images/harp.png"class="string" draggable="true" ondragstart="drag(event)"
-               id="harp" >
-            </div>
-
-
-          </div>
-        </div>
-  	   </div>
-    </div>
-  </div>
+<h3>ACTIVITY NAME</h3>
+<div class="navTabs tabbable tabs-left">
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#a" data-toggle="tab">Overview</a></li>
+  <li><a href="#b" data-toggle="tab">Whole Note</a></li>
+  <li><a href="#c" data-toggle="tab">Half Note</a></li>
+  <li><a href="#d" data-toggle="tab">Quarter Note</a></li>
+  <li><a href="#e" data-toggle="tab">Eighth Note</a></li>
+  <li><a href="#f" data-toggle="tab">Sixteenth Note</a></li>
+  <li><a href="#g" data-toggle="tab">Rests</a></li>
+  <li><a href="#h" data-toggle="tab">Activity</a></li>
+</ul>
 </div>
-    </center>
+<div class="back">
+<div class="tab-content">
+  <div class="tab-pane active" id="a">
+<div class="textTitles">
+<p>What is a music note?</p>
+</div>
+<div class="textContent">
+<p>A note’s position on a music bar shows how high or low the instrument sound should be.</p>
+</div>
+<div class="pictureContent">
+<img src="images/musicScale.jpg" style="">
+</div>
+<div class="textContent">
+<p>The shape of a note shows how many beats it has in a bar.</p>
+</div>
+<div class="pictureContent">
+
+</div>
+</div>
+    <div class="tab-pane" id="b">
+<div class="textTitles">
+<p>Whole Note</p>
+</div>
+<div class="pictureContent">
+  <img src="images/wholeNote.png" style="">
+</div>
+<div class="textContent">
+<p>A whole note will take up all of the beats in a bar.</p>
+</div>
+</div>
+<div class="tab-pane" id="c">
+<div class="textTitles">
+<p>Half Note</p>
+</div>
+<div class="pictureContent">
+  <img src="images/halfNote.png" style="">
+</div>
+<div class="textContent">
+<p>A half note will take up half of beats of a whole note.</p>
+</div>
+</div>
+<div class="tab-pane" id="d">
+<div class="textTitles">
+<p>Quarter Note</p>
+</div>
+
+<img src="images/quarterNote.png" style="">
+
+<div class="textContent">
+<p>A quarter note will take up half of the beats of a half note.</p>
+</div>
+</div>
+<div class="tab-pane" id="e">
+<div class="textTitles">
+<p>Eighth Note</p>
+</div>
+
+<img src="images/eighthNote.png" style="">
+
+<div class="textContent">
+<p>An eighth note will take up half of the beats of a quarter note.</p>
+</div>
+</div>
+<div class="tab-pane" id="f">
+<div class="textTitles">
+<p>Sixteenth Note</p>
+</div>
+
+<img src="images/sixteenthNote.png" style="">
+
+<div class="textContent">
+<p>A sixteenth note will take up half of the beats of an eighth note.</p>
+</div>
+</div>
+<div class="tab-pane" id="g">
+<div class="textTitles">
+<p>Rests</p>
+</div>
+</div>
+<div class="tab-pane" id="h">
+<div class="textTitles">
+<p>Note Beat Activity</p>
+</div>
+  <div id="container">
+    <div id="measure">
+      <div>
+        <hr/>
+        <hr/>
+        <hr/>
+        <hr/>
+      </div>
+      <div id="measureStart">
+        <img id="trebleclef" src="images/trebleclef.png" />
+      </div>
+      <div id="note1" class="note">
+          <p>1</p>
+      </div>
+      <div id="note2" class="note">
+        <p>2</p>
+      </div>
+      <div id="note3" class="note">
+        <p>3</p>
+      </div>
+      <div id="note4" class="note">
+        <p>4</p>
+      </div>
+
+    </div>
+    <div id="imageList">
+      <p> Match the images with the right family! </p>
+      <div class="imageBox">
+        <!--String family -->
+        <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img src="Images/guitar.jpg"class="string" draggable="true" ondragstart="drag(event)"
+           id="guitar" >
+        </div>
+        <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img src="Images/violin.jpg"class="string" draggable="true" ondragstart="drag(event)"
+           id="violin" >
+        </div>
+        <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img src="Images/banjo.jpg"class="string" draggable="true" ondragstart="drag(event)"
+           id="banjo" >
+        </div>
+        <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img src="Images/harp.png"class="string" draggable="true" ondragstart="drag(event)"
+           id="harp" >
+        </div>
+
+
+      </div>
+    </div>
+   </div>
+</div>
+</div>
+</div>
+</center>
 </body>
 </html>
