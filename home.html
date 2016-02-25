@@ -72,6 +72,7 @@ a{
 <script>
 $(document).ready(function(){
   $('#circletext1').hide();
+  $('#triangle').hide();
   $('#note').show();
   $('#links1').mouseenter(function() {
       $('#note').hide();
@@ -81,6 +82,14 @@ $(document).ready(function(){
       $('#circletext1').hide();
       $('#note').show();
     });
+    $('#links2').mouseenter(function() {
+        $('#note').hide();
+        $('#triangle').show();
+      });
+    $('#links2').mouseleave(function() {
+        $('#triangle').hide();
+        $('#note').show();
+      });
 });
 
 
@@ -103,10 +112,11 @@ $(document).ready(function(){
   <div class="nk">
       <a href="activity.html" id="links1"><img src="images/circle.png" border="0" width="100" height="100" /></a>
 
-    <a href="#test" id="circletext1"><img src="images/act4.png" border="0" width="275" height="275" /></a>
+    <a href="#" id="circletext1"><img src="images/pianoAct.png" border="0" width="275" height="275" /></a>
+    <a href="#" id="triangle"><img src="images/act4.png" border="0" width="275" height="275" /></a>
 
     <a href="#" data-toggle="popover" title="Popover Header" data-content="" id="note"><img src="images/HCI.png" border="5" width="275" height="275" /></a>
-    <a href="#" data-toggle="popover" title="Popover Header" data-content=""><img src="images/triangle.png" border="0" width="100" height="100" /></a>
+    <a href="instruments.html" id="links2"><img src="images/triangle.png" border="0" width="100" height="100" /></a>
 
   </div>
   </center>

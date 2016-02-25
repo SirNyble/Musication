@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MUSICATION</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="InstrumentFamily.css">
+  <script src="InstrumentFamily.js"></script>
+
+<style>
+
+body {
+    /**background-image: url("https://s-media-cache-ak0.pinimg.com/236x/68/80/f8/6880f8f43d1273611fb3d0d4906d7f36.jpg");**/
+      color: #000000;
+      background-color: rgba(29, 188, 85, 1);
+      background: -webkit-linear-gradient(top, rgba(251, 235, 89, 1) 0%, rgba(29, 188, 85, 1) 100%);
+      background: linear-gradient(to bottom, rgba(251, 235, 89, 1) 0%,  rgba(29, 188, 85, 1) 100%);
+      background-attachment: fixed;
+
+}
+.menuBar{
+  background-image: url("images/menu2.png");
+  background-repeat: no-repeat;
+   background-position: top;
+   width: 500px;
+   height: 246px;
+}
+  .navbar-nav {
+  width: 100%;
+  text-align: center;
+}
+.navbar-nav > li {
+  float: none;
+  display: inline-block;
+}
+
+.btn-custom {
+  background-color: #CCEBFD;
+  border-color: #CCEBFD;
+}
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active {
+  background-color: #0097e3;
+  border-color: #0086c9;
+}
+.btn-custom.disabled:hover,
+.btn-custom.disabled:focus,
+.btn-custom.disabled:active,
+.btn-custom.disabled.active,
+.btn-custom[disabled]:hover,
+.btn-custom[disabled]:focus,
+.btn-custom[disabled]:active,
+.btn-custom[disabled].active,
+fieldset[disabled] .btn-custom:hover,
+fieldset[disabled] .btn-custom:focus,
+fieldset[disabled] .btn-custom:active,
+fieldset[disabled] .btn-custom.active {
+  background-color: #00a8fc;
+  border-color: #00a8fc;
+}
+.tabs-below > .nav-tabs,
+.tabs-right > .nav-tabs,
+.tabs-left > .nav-tabs {
+  border-bottom: 0;
+}
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: none;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+  display: block;
+  background-color: #F8F8F8;
+  min-height: 200px;
+}
+
+.tabs-below > .nav-tabs {
+  border-top: 1px solid #ddd;
+}
+
+.tabs-left > .nav-tabs > li,
+.tabs-right > .nav-tabs > li {
+  float: none;
+}
+
+.tabs-left > .nav-tabs > li > a,
+.tabs-right > .nav-tabs > li > a {
+  min-width: 74px;
+  margin-right: 0;
+  margin-bottom: 3px;
+}
+
+.tabs-left > .nav-tabs {
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #ddd;
+}
+
+.tabs-left > .nav-tabs > li > a {
+  margin-right: 1px;
+  margin-left: -110px;
+  margin-top: 0px;
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+          background-color: #D1D1D1;
+}
+
+.tabs-left > .nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+
+}
+
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus {
+  border-color: #ddd transparent #ddd #ddd;
+  *border-right-color: #ffffff;
+}
+
+.cont{
+  width: 800px;
+}
+
+.back{
+  /**background-color: #F8F8F8;**/
+
+  background-color: #F8F8F8;
+  min-height: 350px;
+  border-style: dashed;
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+          border-color: #000000;
+}
+
+a{
+  color: #000000;
+}
+
+</style>
+<script>
+
+</script>
+</head>
+<body>
+
+
+  <center>
+    <div class="menuBar">
+      <br/><br/>
+      <img src="images/head.png" border="0" />
+      <br/>
+        <a href="home.html" role="button" class="btn btn-custom">Home</a>
+        <a href="activity.html" role="button" class="btn btn-custom">Next Activity</a>
+        <a href="progress.html" role="button" class="btn btn-custom">Progress</a>
+      </div>
+      <div class="container">
+<div class="cont"><h3>ACTIVITY NAME</h3>
+
+    <div class="tabbable tabs-left">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#a" data-toggle="tab">Woodwinds</a></li>
+        <li><a href="#b" data-toggle="tab">Brass</a></li>
+        <li><a href="#e" data-toggle="tab">String</a></li>
+        <li><a href="#f" data-toggle="tab">Percussion</a></li>
+        <li><a href="#g" data-toggle="tab">Keyboards</a></li>
+        <li><a href="#c" data-toggle="tab">Activity</a></li>
+      </ul>
+
+      <div class="back">
+      <div class="tab-content">
+       <div class="tab-pane active" id="a"><left><ul>Woodwinds
+<li>These instruments use a thin piece of wood called a reed, which vibrates when you blow through it.</li>
+<li>The flute is a woodwind instrument, but does not use a reed. It is still played by blowing into it.</li>
+<li>Includes:
+<li>	Flute </li>
+<li>Clarinet</li>
+<li>Saxophone</li>
+<li>Bagpipes</li></li>
+</ul></left>
+</div>
+       <div class="tab-pane" id="b">-	Brass
+o	These instruments have mouth pieces that you vibrate your lips into to make sound.
+o	Some brass instruments have keys that you press (trumpet), while others have pieces that you move (trombone).
+o	Includes:
+	Trumpet
+	Tuba
+	Trombone
+	French horn
+</div>
+<div class="tab-pane" id="e">-	String
+o	These instruments have strings that you vibrate to make sound.
+o	Some are played by plucking the strings, while others slide the strings with a bow.
+o	Includes:
+	Guitar
+	Harp
+	Violin
+	Banjo
+
+</div>
+<div class="tab-pane" id="f">-	String
+o	These instruments have strings that you vibrate to make sound.
+o	Some are played by plucking the strings, while others slide the strings with a bow.
+o	Includes:
+	Guitar
+	Harp
+	Violin
+	Banjo
+
+</div>
+<div class="tab-pane" id="g">-	Keyboards
+o	These instruments have a set of keys that sound off notes when pressed.
+o	Keyboards may hit strings, blow air, or use electricity to play sounds.
+o	Includes:
+	Piano
+	Accordion
+	Pipe organ
+	Electric keyboards
+
+</div>
+       <div class="tab-pane" id="c">
+         <div id="imageList">
+           <p> Match the images with the right family! </p>
+           <div class="imageBox">
+             <!--String family -->
+             <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+               <img src="Images/guitar.jpg"class="string" draggable="true" ondragstart="drag(event)"
+                id="guitar" >
+             </div>
+             <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+               <img src="Images/violin.jpg"class="string" draggable="true" ondragstart="drag(event)"
+                id="violin" >
+             </div>
+             <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+               <img src="Images/banjo.jpg"class="string" draggable="true" ondragstart="drag(event)"
+                id="banjo" >
+             </div>
+             <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+               <img src="Images/harp.png"class="string" draggable="true" ondragstart="drag(event)"
+                id="harp" >
+             </div>
+
+             <!--Brass -->
+             <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+               <img src="Images/trumpet.jpg"class="brass" draggable="true" ondragstart="drag(event)"
+                id="trumpet" >
+             </div>
+             <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+               <img src="Images/frenchhorn.jpg"class="brass" draggable="true" ondragstart="drag(event)"
+                id="frenchhorn">
+             </div>
+             <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+               <img src="Images/tuba.jpg"class="brass" draggable="true" ondragstart="drag(event)"
+                id="tuba" >
+             </div>
+             <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+               <img src="Images/trombone.jpg"class="brass" draggable="true" ondragstart="drag(event)"
+                id="trombone" >
+             </div>
+
+             <!--Percussion-->
+             <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+               <img src="Images/cymbals.jpg"class="percussion" draggable="true" ondragstart="drag(event)"
+                id="cymbals" >
+             </div>
+             <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+               <img src="Images/maracas.jpg"class="percussion" draggable="true" ondragstart="drag(event)"
+                id="maracas">
+             </div>
+             <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+               <img src="Images/drums.jpg"class="percussion" draggable="true" ondragstart="drag(event)"
+                id="drums" >
+             </div>
+             <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+               <img src="Images/xylophone.jpg"class="percussion" draggable="true" ondragstart="drag(event)"
+                id="xylophone" >
+             </div>
+
+             <!--Wind-->
+             <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+               <img src="Images/bagpipes.jpg"class="wind" draggable="true" ondragstart="drag(event)"
+                id="bagpipes" >
+             </div>
+             <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+               <img src="Images/flute.jpg"class="wind" draggable="true" ondragstart="drag(event)"
+                id="flute">
+             </div>
+             <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+               <img src="Images/saxophone.jpg"class="wind" draggable="true" ondragstart="drag(event)"
+                id="saxophone" >
+             </div>
+             <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+               <img src="Images/clarinet.jpg"class="wind" draggable="true" ondragstart="drag(event)"
+                id="clarinet" >
+           </div>
+           </div>
+         </div>
+         <div id="familyGroup">
+           <!-- Wind Family of instruments! -->
+           <div id="windFamily" class="family">
+             <div class="familyTitle">
+               <p>Wind Family</p>
+             </div>
+             <div class="answerBoxes">
+               <div id="windAnswer1" class="instrumentBox wind" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)">
+                 <!--<img src="space.jpg"class="wind" draggable="true" ondragstart="drag(event)"
+                  id="drag1" > -->
+               </div>
+               <div id="windAnswer2" class="instrumentBox wind" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)"></div>
+               <div id="windAnswer3" class="instrumentBox wind" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)"></div>
+               <div id="windAnswer4" class="instrumentBox wind" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)"></div>
+             </div>
+           </div>
+
+           <!-- Brass Family of instruments! -->
+           <div id="brassFamily" class="family">
+             <div class="familyTitle">
+               <p>Brass Family</p>
+             </div>
+             <div class="answerBoxes">
+               <div id="brassAnswer1" class="instrumentBox brass" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)"></div>
+               <div id="brassAnswer2" class="instrumentBox brass" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)"></div>
+               <div id="brassAnswer3" class="instrumentBox brass" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)"></div>
+               <div id="brassAnswer4" class="instrumentBox brass" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)"></div>
+             </div>
+           </div>
+
+           <!-- String Family of instruments! -->
+           <div id="stringFamily" class="family">
+             <div class="familyTitle">
+               <p>String Family</p>
+             </div>
+             <div class="answerBoxes">
+               <div id="stringAnswer1" class="instrumentBox string" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)"></div>
+               <div id="stringAnswer2" class="instrumentBox string" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)"></div>
+               <div id="stringAnswer3" class="instrumentBox string" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)"></div>
+               <div id="stringAnswer4" class="instrumentBox string" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)"></div>
+             </div>
+           </div>
+
+           <!-- Percussion Family of instruments! -->
+           <div id="percussionFamily" class="family">
+             <div class="familyTitle">
+               <p>Percussion Family</p>
+             </div>
+             <div class="answerBoxes">
+               <div id="percussionAnswer1" class="instrumentBox percussion" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)"></div>
+               <div id="percussionAnswer2" class="instrumentBox percussion" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)"></div>
+               <div id="percussionAnswer3" class="instrumentBox percussion" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)"></div>
+               <div id="percussionAnswer4" class="instrumentBox percussion" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)"></div>
+             </div>
+           </div>
+         </div>
+
+
+
+      </div>
+      <br/><br/>
+    </div>
+    </div>
+  </div>
+</div>
+    </center>
+</body>
+</html>

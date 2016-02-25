@@ -72,13 +72,6 @@ fieldset[disabled] .btn-custom.active {
 .tab-content > .tab-pane,
 .pill-content > .pill-pane {
   display: none;
-  background-color: #F8F8F8;
-  min-height: 200px;
-  border-style: dashed;
-  -webkit-border-radius: 4px 0 0 4px;
-     -moz-border-radius: 4px 0 0 4px;
-          border-radius: 4px 0 0 4px;
-          border-color: #000000;
 }
 
 .tab-content > .active,
@@ -86,11 +79,6 @@ fieldset[disabled] .btn-custom.active {
   display: block;
   background-color: #F8F8F8;
   min-height: 200px;
-  border-style: dashed;
-  -webkit-border-radius: 4px 0 0 4px;
-     -moz-border-radius: 4px 0 0 4px;
-          border-radius: 4px 0 0 4px;
-          border-color: #4CB8B8;
 }
 
 .tabs-below > .nav-tabs {
@@ -117,8 +105,8 @@ fieldset[disabled] .btn-custom.active {
 
 .tabs-left > .nav-tabs > li > a {
   margin-right: 1px;
-  margin-left: 3px;
-  margin-top: 3px;
+  margin-left: -90px;
+  margin-top: 0px;
   -webkit-border-radius: 4px 0 0 4px;
      -moz-border-radius: 4px 0 0 4px;
           border-radius: 4px 0 0 4px;
@@ -139,12 +127,19 @@ fieldset[disabled] .btn-custom.active {
 }
 
 .cont{
-  width: 700px;
+  width: 600px;
 }
 
 .back{
   /**background-color: #F8F8F8;**/
+
+  background-color: #F8F8F8;
   min-height: 200px;
+  border-style: dashed;
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+          border-color: #000000;
 }
 
 a{
@@ -165,24 +160,15 @@ a{
       <img src="images/head.png" border="0" />
       <br/>
         <a href="home.html" role="button" class="btn btn-custom">Home</a>
-        <a href="activity.html" role="button" class="btn btn-custom">Next Activity</a>
+        <a href="instruments.html" role="button" class="btn btn-custom">Next Activity</a>
         <a href="progress.html" role="button" class="btn btn-custom">Progress</a>
       </div>
       <div class="container">
-<div class="cont"><h3>ACTIVITY NAME</h3>
+<div class="cont"><h3>Piano Free Play</h3>
+
     <div class="tabbable tabs-left">
-      <ul class="nav nav-tabs">
-        <li class="active"><a href="#a" data-toggle="tab">One</a></li>
-        <li><a href="#b" data-toggle="tab">Two</a></li>
-        <li><a href="#c" data-toggle="tab">Activity</a></li>
-      </ul>
 
       <div class="back">
-      <div class="tab-content">
-       <div class="tab-pane active" id="a">Things about piano</div>
-       <div class="tab-pane" id="b">Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
-       Aliquam in felis sit amet augue.</div>
-       <div class="tab-pane" id="c">
          <h4>Click a key to play a note on this interactive piano!</h4>
          <div id="piano">
              <div id="redBar"></div>
@@ -228,11 +214,11 @@ a{
            </audio>
          </div>
        </div>
+
       </div>
+      <br/><br/>
     </div>
     </div>
-  </div>
-</div>
     </center>
 </body>
 </html>
