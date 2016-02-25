@@ -25,7 +25,7 @@ function drop(ev) {
       var divFamilyClass = ev.target.className;
       console.log("Dragged: " + draggedFamilyClass);
       console.log("div: " + divFamilyClass);
-      if(divFamilyClass.contains(draggedFamilyClass)  )
+      if(divFamilyClass.indexOf(draggedFamilyClass) > -1   )
       {
         $("div #" + ev.target.id).css("border", "5px solid green");
         console.log("Correct family!");
@@ -44,7 +44,8 @@ function drop(ev) {
       console.log("dragged: " + draggedFamilyClass);
       console.log("div: " +  divFamilyClass);
       //console.log("Same movement: " + draggedFamilyClass);
-      if(draggedFamilyClass.contains(divFamilyClass)  )
+      //this.indexOf(s) > -1
+      if(divFamilyClass.indexOf(draggedFamilyClass) > -1  )
       {
         $("#" + parent).css("border", "5px solid green");
         console.log("Correct family!");
