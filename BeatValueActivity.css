@@ -2,7 +2,7 @@
 #measure
 {
   width: 550px;
-  height: 150px;
+  height: 155px;
   margin-left: 10%;
   margin-top: 9%;
   background-color: white;
@@ -21,6 +21,7 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
   width: 85%;
 }
 
@@ -29,6 +30,80 @@
     display: block;
     clear: both;
 }
+.beat
+{
+  width: 100%;
+  height: inherit;
+}
+
+/*Whole note */
+.wholeNote
+{
+  width: 100%;
+}
+.wholeNoteImage
+{
+  width: 100px;
+  height: 100px;
+  margin-top: 25px;
+}
+/*Half Note*/
+.halfNote
+{
+  width: 49%;
+  display: inline-block;
+  float: left;
+}
+.halfNoteImage
+{
+  width: 100px;
+  height: 100px;
+  margin-top: 25px;
+}
+
+/*Quarter Note*/
+.quarterNote
+{
+  width: 24%;
+  display: inline-block;
+  float: left;
+}
+.quarterNoteImage
+{
+  width: 100px;
+  height: 100px;
+  margin-top: 25px;
+}
+/*Eighth Note*/
+.eighthNote
+{
+  width: 11%;
+  display: inline-block;
+  float: left;
+}
+.eighthNoteImage
+{
+  width: 100px;
+  height: 100px;
+  margin-top: 25px;
+}
+
+/*Sixteenth Note*/
+.sixteenthNote
+{
+  width: 5%;
+  display: inline-block;
+  float: left;
+  margin-right: 4px;
+}
+.sixteenthNoteImage
+{
+  width: 70px;
+  height: 100px;
+  margin-top: 25px;
+
+}
+
 .imageBox
 {
   text-align: center;
@@ -97,11 +172,14 @@ hr:nth-child(4)
 {
   display: inline-block;
   float: left;
-  width: 22%;
-}
-#note1, #note2, #note3, #note4{
-  background-color: white;
+  width: 88%;
+  height: 150px;
 
+}
+#notesImages{
+  background-color: white;
+  width: 100%;
+  height: 150px;
 }
 /*.note::after{
   content: "";

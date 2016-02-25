@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="InstrumentFamily.css">
-  <script src="InstrumentFamily.js"></script>
+  <script src="BeatValueActivity.js"></script>
+  <link rel="stylesheet" type="text/css" href="BeatValueActivity.css">
 
 <style>
 
@@ -211,6 +211,7 @@ a{
 </div>
 <div class="pictureContent">
 
+
 </div>
 </div>
     <div class="tab-pane" id="b">
@@ -288,40 +289,33 @@ a{
       <div id="measureStart">
         <img id="trebleclef" src="images/trebleclef.png" />
       </div>
-      <div id="note1" class="note">
-          <p>1</p>
-      </div>
-      <div id="note2" class="note">
-        <p>2</p>
-      </div>
-      <div id="note3" class="note">
-        <p>3</p>
-      </div>
-      <div id="note4" class="note">
-        <p>4</p>
-      </div>
+      <div id="notes" class="note"></div>
 
-    </div>
-    <div id="imageList">
-      <p> Match the images with the right family! </p>
-      <div class="imageBox">
-        <!--String family -->
-        <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
-          <img src="Images/guitar.jpg"class="string" draggable="true" ondragstart="drag(event)"
-           id="guitar" >
+      <div id="imageList">
+        <p id="tutorial"> Place the right number of notes to fill the measure! </p>
+        <div class="imageBox">
+          <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/wholeNote.png"class="beat" draggable="true" ondragstart="drag(event)"
+             id="1">
+          </div>
+          <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/halfNote.png"class="beat" draggable="true" ondragstart="drag(event)"
+             id="0.5">
+          </div>
+          <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/quarterNote.png"class="beat" draggable="true" ondragstart="drag(event)"
+             id="0.25" >
+          </div>
+          <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/eighthNote.png"class="beat" draggable="true" ondragstart="drag(event)"
+             id="0.125">
+          </div>
+          <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/sixteenthNote.png"class="beat" draggable="true" ondragstart="drag(event)"
+             id="0.0625">
+          </div>
         </div>
-        <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
-          <img src="Images/violin.jpg"class="string" draggable="true" ondragstart="drag(event)"
-           id="violin" >
-        </div>
-        <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
-          <img src="Images/banjo.jpg"class="string" draggable="true" ondragstart="drag(event)"
-           id="banjo" >
-        </div>
-        <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
-          <img src="Images/harp.png"class="string" draggable="true" ondragstart="drag(event)"
-           id="harp" >
-        </div>
+      </div>
 
 
       </div>
