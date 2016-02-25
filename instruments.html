@@ -21,6 +21,9 @@ body {
       background-attachment: fixed;
 
 }
+.container{
+
+}
 .menuBar{
   background-image: url("images/menu2.png");
   background-repeat: no-repeat;
@@ -72,6 +75,7 @@ fieldset[disabled] .btn-custom.active {
 .tab-content > .tab-pane,
 .pill-content > .pill-pane {
   display: none;
+  margin-left: 8px;
 }
 
 .tab-content > .active,
@@ -79,6 +83,7 @@ fieldset[disabled] .btn-custom.active {
   display: block;
   background-color: #F8F8F8;
   min-height: 200px;
+  text-align: left;
 }
 
 .tabs-below > .nav-tabs {
@@ -135,6 +140,7 @@ fieldset[disabled] .btn-custom.active {
 
   background-color: #F8F8F8;
   min-height: 350px;
+
   border-style: dashed;
   -webkit-border-radius: 4px 0 0 4px;
      -moz-border-radius: 4px 0 0 4px;
@@ -154,15 +160,18 @@ a{
 <body>
 
 
-  <center>
+<center>
     <div class="menuBar">
+
       <br/><br/>
       <img src="images/head.png" border="0" />
       <br/>
         <a href="home.html" role="button" class="btn btn-custom">Home</a>
         <a href="activity.html" role="button" class="btn btn-custom">Next Activity</a>
         <a href="progress.html" role="button" class="btn btn-custom">Progress</a>
+
       </div>
+
       <div class="container">
 <div class="cont"><h3>ACTIVITY NAME</h3>
 
@@ -178,54 +187,76 @@ a{
 
       <div class="back">
       <div class="tab-content">
-       <div class="tab-pane active" id="a"><left><ul>Woodwinds
-<li>These instruments use a thin piece of wood called a reed, which vibrates when you blow through it.</li>
-<li>The flute is a woodwind instrument, but does not use a reed. It is still played by blowing into it.</li>
-<li>Includes:
-<li>	Flute </li>
-<li>Clarinet</li>
-<li>Saxophone</li>
-<li>Bagpipes</li></li>
-</ul></left>
+       <div class="tab-pane active" id="a">
+         <h4><b>Woodwinds</b></h4>
+         <ul>
+           <li>These instruments use a thin piece of wood called a reed, which vibrates when you blow through it.</li>
+           <li>The flute is a woodwind instrument, but does not use a reed. It is still played by blowing into it.</li>
+           <li>Includes:
+             <ul>
+             <li>	Flute </li>
+             <li>Clarinet</li>
+             <li>Saxophone</li>
+             <li>Bagpipes</li>
+           </ul>
+         </li>
+       </ul>
+       </div>
+       <div class="tab-pane" id="b"><h4><b>Brass</b></h4>
+         <ul>
+           <li>These instruments have mouth pieces that you vibrate your lips into to make sound.</li>
+           <li>Some brass instruments have keys that you press (trumpet), while others have pieces that you move (trombone).</li>
+           <li>Includes:
+             <ul>
+               <li>Trumpet</li>
+               <li>Tuba</li>
+               <li>Trombone</li>
+               <li>French horn</li>
+             </ul>
+           </li>
+         </ul>
 </div>
-       <div class="tab-pane" id="b">-	Brass
-o	These instruments have mouth pieces that you vibrate your lips into to make sound.
-o	Some brass instruments have keys that you press (trumpet), while others have pieces that you move (trombone).
-o	Includes:
-	Trumpet
-	Tuba
-	Trombone
-	French horn
-</div>
-<div class="tab-pane" id="e">-	String
-o	These instruments have strings that you vibrate to make sound.
-o	Some are played by plucking the strings, while others slide the strings with a bow.
-o	Includes:
-	Guitar
-	Harp
-	Violin
-	Banjo
+<div class="tab-pane" id="e"><h4><b>String</b></h4>
+<ul>
+  <li>These instruments have strings that you vibrate to make sound.</li>
+  <li>Some are played by plucking the strings, while others slide the strings with a bow.</li>
+  <li>Includes:
+    <ul>
+      <li>Guitar</li>
+      <li>Harp</li>
+      <li>Violin</li>
+      <li>Banjo</li>
+    </ul>
+  </li>
+</ul>
 
 </div>
-<div class="tab-pane" id="f">-	String
-o	These instruments have strings that you vibrate to make sound.
-o	Some are played by plucking the strings, while others slide the strings with a bow.
-o	Includes:
-	Guitar
-	Harp
-	Violin
-	Banjo
-
+<div class="tab-pane" id="f"><h4><b>Percussion</b></h4>
+<ul>
+  <li>o	These instruments are played by hitting them with a stick or your hands, or shaking.</li>
+  <li>Includes:
+    <ul>
+      <li>Drums</li>
+      <li>Maracas</li>
+      <li>Xylophone</li>
+      <li>Cymbals</li>
+    </ul>
+  </li>
+</ul>
 </div>
-<div class="tab-pane" id="g">-	Keyboards
-o	These instruments have a set of keys that sound off notes when pressed.
-o	Keyboards may hit strings, blow air, or use electricity to play sounds.
-o	Includes:
-	Piano
-	Accordion
-	Pipe organ
-	Electric keyboards
-
+<div class="tab-pane" id="g"><h4><b>Keyboards</b></h4>
+  <ul>
+    <li>These instruments have a set of keys that sound off notes when pressed.</li>
+    <li>Keyboards may hit strings, blow air, or use electricity to play sounds. </li>
+    <li>Includes:
+      <ul>
+        <li>Piano</li>
+        <li>Accordion</li>
+        <li>Pipe organ</li>
+        <li>Electric keyboards</li>
+      </ul>
+    </li>
+  </ul>
 </div>
        <div class="tab-pane" id="c">
          <div id="imageList">
@@ -369,6 +400,6 @@ o	Includes:
     </div>
   </div>
 </div>
-    </center>
+</center>
 </body>
 </html>
