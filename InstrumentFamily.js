@@ -19,6 +19,10 @@ function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
 
+    //Check if image is there!!
+    //if()
+
+    //allow for dropping in the box pool!!
     if(data != ev.target.id)
     {
       var draggedFamilyClass = $("#" + data).attr('class');

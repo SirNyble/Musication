@@ -4,28 +4,28 @@ body
     margin: 0 0;
     padding: 0;
 }
-
+p
+{
+  font-size: 14pt;
+}
 #familyGroup{
-
-    margin-left: 27%;
+  margin-left: auto;
     margin-right: auto;
-    width: 66%;
-    margin-top: 5%;
+    width: 100%;
 }
 #familyGroup:after {
-    content: ".";
+    content: "";
     display: block;
     clear: both;
 }
 
 #imageList{
   text-align: center;
-  margin-left: auto;
   margin-right: auto;
-  width: 66%;
+  width: 98%;
 }
 #imageList:after {
-    content: ".";
+    content: "";
     display: block;
     clear: both;
 }
@@ -35,7 +35,7 @@ body
   text-align: center;
   border: 2px solid #000000;
   float: left;
-  width: 34%;
+  width: 48%;
   margin: 5px ;
   border-radius: 12px;
   background-color: antiquewhite;
@@ -45,7 +45,7 @@ body
 #xylophone, #drums, #maracas, #cymbals, #bagpipes, #flute, #clarinet, #trumpet
 {
   width: 100%;
-  height: inherit;
+  height: 98%;
 }
 
 .imageBox
@@ -57,8 +57,8 @@ body
   margin: 5px ;
   border-radius: 12px;
   background-color: antiquewhite;
-
 }
+
 .answerBoxes
 {
   display: inline-block;
@@ -70,7 +70,7 @@ body
 {
   float:left;
   /*width:40%;*/
-  width: 130px;
+  width: 115px;
   height:80px;
   margin:6px;
   /*padding:10px;*/
@@ -83,7 +83,7 @@ body
 {
   text-align: center;
  float:left;
- width:130px;
+ width:115px;
  height:80px;
  margin:6px;
  /*padding:10px;*/
