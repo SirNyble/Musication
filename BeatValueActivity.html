@@ -206,7 +206,7 @@ a{
       <p>Also, the shape of a note shows how many beats it has in a bar!</p>
     </div>
   </div>
-  
+
   <div class="tab-pane" id="b">
     <div class="textTitles">
       <p>Whole Note</p>
@@ -217,7 +217,7 @@ a{
     </div>
     <img src="images/wholeNoteBar.png" style="width: 480px;">
   </div>
-  
+
   <div class="tab-pane" id="c">
     <div class="textTitles">
       <p>Half Note</p>
@@ -228,7 +228,7 @@ a{
     </div>
     <img src="images/halfNoteBar.png" style="width: 480px;">
   </div>
-  
+
   <div class="tab-pane" id="d">
     <div class="textTitles">
       <p>Quarter Note</p>
@@ -239,7 +239,7 @@ a{
     </div>
     <img src="images/quarterNoteBar.png" style="width: 480px;">
   </div>
-  
+
   <div class="tab-pane" id="e">
     <div class="textTitles">
       <p>Eighth Note</p>
@@ -250,7 +250,7 @@ a{
     </div>
     <img src="images/eighthNoteBar.png" style="width: 480px;">
   </div>
-  
+
   <div class="tab-pane" id="f">
     <div class="textTitles">
       <p>Sixteenth Note</p>
@@ -261,7 +261,7 @@ a{
     </div>
     <img src="images/sixteenthNoteBar.png" style="width: 480px;">
   </div>
-  
+
   <div class="tab-pane" id="g">
     <div class="textTitles">
       <p>Rests</p>
@@ -294,21 +294,24 @@ a{
         <div id="imageList">
           <p id="tutorial"> Place the right number of notes to fill the measure! </p>
           <div class="imageBox">
-            <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
-              <img src="images/wholeNote.png"class="beat" draggable="true" ondragstart="drag(event)" id="1">
+            <div class="instrumentBoxScrambled">
+              <img src="images/wholeNote.png"class="beat" id="1">
             </div>
-            <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
-              <img src="images/halfNote.png"class="beat" draggable="true" ondragstart="drag(event)" id="0.5">
+            <div class="instrumentBoxScrambled" >
+              <img src="images/halfNote.png"class="beat"id="0.5">
             </div>
-            <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
-              <img src="images/quarterNote.png"class="beat" draggable="true" ondragstart="drag(event)" id="0.25" >
+            <div class="instrumentBoxScrambled" >
+              <img src="images/quarterNote.png"class="beat" id="0.25" >
             </div>
-            <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
-              <img src="images/eighthNote.png"class="beat" draggable="true" ondragstart="drag(event)" id="0.125">
+            <div class="instrumentBoxScrambled" >
+              <img src="images/eighthNote.png"class="beat" id="0.125">
             </div>
-            <div class="instrumentBoxScrambled" ondrop="drop(event)" ondragover="allowDrop(event)">
-              <img src="images/sixteenthNote.png"class="beat" draggable="true" ondragstart="drag(event)" id="0.0625">
+            <div class="instrumentBoxScrambled" >
+              <img src="images/sixteenthNote.png"class="beat" id="0.0625">
             </div>
+          </div>
+          <div class="controlOptions">
+              <div id="reset" class="btn btn-custom" role="button">Reset</div>
           </div>
         </div>
       </div>

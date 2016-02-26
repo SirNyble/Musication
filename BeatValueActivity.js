@@ -38,4 +38,9 @@ $(document).ready(function(){
     //$(this).addClass('note');
     //console.log("has note: " + $(this).hasClass('note'));
   });
+
+  $("#reset").on("click", function(){
+      $("#notes").html("");
+      totalBeat = 0;
+  });
 });
