@@ -100,6 +100,8 @@ p{
 {
   display: inline-block;
   width: 50%;
+  height: 300px;
+  overflow-y: hidden;
   float: left;
 }
 #activities
@@ -120,25 +122,42 @@ p{
 $(document).ready(function(){
   $('#circletext1').hide();
   $('#triangle').hide();
+  $('#notePreview').hide();
   $('#note').show();
+
   $('#links1').mouseenter(function() {
-      $('#note').hide();
-      $('#circletext1').show();
+      $('#note').fadeOut(function(){
+        $('#circletext1').fadeIn();
+      });
+
     });
   $('#links1').mouseleave(function() {
-      $('#circletext1').hide();
-      $('#note').show();
+      $('#circletext1').fadeOut(function(){
+        $('#note').fadeIn();
+      });
     });
 
-
     $('#links2').mouseenter(function() {
-        $('#note').hide();
-        $('#triangle').show();
+        $('#note').fadeOut(function(){
+          $('#triangle').fadeIn();
+        });
       });
     $('#links2').mouseleave(function() {
-        $('#triangle').hide();
-        $('#note').show();
+        $('#triangle').fadeOut(function(){
+          $('#note').fadeIn();
+        });
       });
+
+      $('#links3').mouseenter(function() {
+          $('#note').fadeOut(function(){
+            $('#notePreview').fadeIn();
+          });
+        });
+      $('#links3').mouseleave(function() {
+          $('#notePreview').fadeOut(function(){
+            $('#note').fadeIn();
+          });
+        });
 });
 
 
@@ -170,6 +189,7 @@ $(document).ready(function(){
         <div id="previewActivity">
           <a href="#" id="circletext1"><img src="images/pianoAct.png" border="0" width="300" height="300" /></a>
           <a href="#" id="triangle"><img src="images/instr.png" border="0" width="300" height="300" /></a>
+          <a href="#" id="notePreview"><img src="images/NoteActivityPreview.png" border="0" width="300" height="300" /></a>
           <img src="images/HCI.png" border="5" width="300" height="300" id="note"/>
         </div>
         <div id="row2Activity">
