@@ -86,18 +86,6 @@ a{
 }
 
 </style>
-<svg style="position: absolute; top: -999999px" xmlns="http://www.w3.org/2000/svg">
- <filter id="drop-shadow">
-    <feGaussianBlur in="SourceAlpha" stdDeviation="[radius]"/>
-    <feOffset dx="[offset-x]" dy="[offset-y]" result="offsetblur"/>
-    <feFlood flood-color="[color]"/>
-    <feComposite in2="offsetblur" operator="in"/>
-    <feMerge>
-      <feMergeNode/>
-      <feMergeNode in="SourceGraphic"/>
-    </feMerge>
-  </filter>
-</svg>
 <script>
 $(document).ready(function(){
   $('#circletext1').hide();
@@ -138,18 +126,15 @@ $(document).ready(function(){
       </div><br/>
 <div class="container">
 <h4>Choose an activity to start your musical adventure!</h4>
-  <div class="nk">
       <a href="activity.html" id="links1" title="Click to Start!"><img src="images/pianoDown.png" border="0" width="100" height="100" /></a>
 
-    <a href="#" id="circletext1"><img src="images/pianoAct.png" border="0" width="400" height="400" /></a>
-    <a href="#" id="triangle"><img src="images/instr.png" border="0" width="400" height="400" /></a>
+    <a href="#" id="circletext1"><img src="images/pianoAct.png" border="0" width="300" height="300" /></a>
+    <a href="#" id="triangle"><img src="images/instr.png" border="0" width="300" height="300" /></a>
 
-    <img src="images/HCI.png" border="5" width="400" height="400" id="note"/>
+    <img src="images/HCI.png" border="5" width="300" height="300" id="note"/>
     <a href="instruments.html" id="links2" title="Click to Start!"><img src="images/beatIcon.png" border="0" width="100" height="120" /></a>
 
   </div>
   </center>
-
-</div>
 </body>
 </html>
