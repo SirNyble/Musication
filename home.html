@@ -67,26 +67,56 @@ fieldset[disabled] .btn-custom.active {
 a{
   color: #000000;
 }
-#links1
-{
-  margin-right: 100px;
+p{
+  text-align: center;
+  font-size: 14pt;
 }
+
 #links1:hover {
     opacity: 0.5;
     filter: alpha(opacity=50);
 }
 
-#links2
-{
-  margin-left: 100px;
-}
 #links2:hover {
     opacity: 0.5;
     filter: alpha(opacity=50);
 }
+#links3:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+#row1Activity, #row2Activity
+{
+  display: inline-block;
+  width: 18%;
+  float: left;
+}
+.newActivity
+{
+  margin-bottom: 50px;
+}
+#previewActivity
+{
+  display: inline-block;
+  width: 50%;
+  float: left;
+}
+#activities
+{
+  width: 66%;
+  margin-top: 60px;
+}
+#activities::after{
+  content: "";
+  display: block;
+  clear: both;
+}
 
 </style>
 <script>
+
+//FADE INTO
 $(document).ready(function(){
   $('#circletext1').hide();
   $('#triangle').hide();
@@ -99,6 +129,8 @@ $(document).ready(function(){
       $('#circletext1').hide();
       $('#note').show();
     });
+
+
     $('#links2').mouseenter(function() {
         $('#note').hide();
         $('#triangle').show();
@@ -113,28 +145,41 @@ $(document).ready(function(){
 </script>
 </head>
 <body>
-
-
   <center>
     <div class="menuBar">
       <br/><br/>
       <img src="images/head.png" border="0" />
       <br/>
-        <a href="home.html" role="button" class="btn btn-custom">Home</a>
-        <a href="activity.html" role="button" class="btn btn-custom">Next Activity</a>
-        <a href="progress.html" role="button" class="btn btn-custom">Progress</a>
-      </div><br/>
-<div class="container">
-<h4>Choose an activity to start your musical adventure!</h4>
-      <a href="activity.html" id="links1" title="Click to Start!"><img src="images/pianoDown.png" border="0" width="100" height="100" /></a>
-
-    <a href="#" id="circletext1"><img src="images/pianoAct.png" border="0" width="300" height="300" /></a>
-    <a href="#" id="triangle"><img src="images/instr.png" border="0" width="300" height="300" /></a>
-
-    <img src="images/HCI.png" border="5" width="300" height="300" id="note"/>
-    <a href="instruments.html" id="links2" title="Click to Start!"><img src="images/beatIcon.png" border="0" width="100" height="120" /></a>
-
-  </div>
+      <a href="home.html" role="button" class="btn btn-custom">Home</a>
+      <a href="activity.html" role="button" class="btn btn-custom">Next Activity</a>
+      <a href="progress.html" role="button" class="btn btn-custom">Progress</a>
+    </div><br/>
+    <div class="container">
+      <h4>Choose an activity to start your musical adventure!</h4>
+      <div id="activities">
+        <div id="row1Activity">
+          <div id="activity1" class="newActivity">
+            <p>Piano</p>
+            <a href="activity.html" id="links1" title="Click to Start!"><img src="images/pianoDown.png" border="0" width="100" height="100" /></a>
+          </div>
+          <div id="activity3" class="newActivity">
+            <p> Beat Values</p>
+            <a href="BeatValueActivity.html" id="links3" title="Click to Start!"><img src="images/beatIcon.png" border="0" width="100" height="100" /></a>
+          </div>
+        </div>
+        <div id="previewActivity">
+          <a href="#" id="circletext1"><img src="images/pianoAct.png" border="0" width="300" height="300" /></a>
+          <a href="#" id="triangle"><img src="images/instr.png" border="0" width="300" height="300" /></a>
+          <img src="images/HCI.png" border="5" width="300" height="300" id="note"/>
+        </div>
+        <div id="row2Activity">
+          <div id="activity2" class="newActivity">
+            <p>Instrument Family</p>
+            <a href="instruments.html" id="links2" title="Click to Start!"><img src="images/instrFamily.png" border="0" width="100" height="120" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </center>
 </body>
 </html>
