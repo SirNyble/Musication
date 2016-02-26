@@ -69,7 +69,7 @@ a{
 }
 p{
   text-align: center;
-  font-size: 14pt;
+  font-size: 15pt;
 }
 
 #links1:hover {
@@ -86,11 +86,20 @@ p{
   filter: alpha(opacity=50);
 }
 
-#row1Activity, #row2Activity
+#row1Activity
 {
   display: inline-block;
-  width: 18%;
+  width: 14%;
   float: left;
+  margin-right: 30px;
+}
+
+#row2Activity
+{
+  display: inline-block;
+  width: 14%;
+  float: left;
+  margin-left: 44px;
 }
 .newActivity
 {
@@ -99,9 +108,9 @@ p{
 #previewActivity
 {
   display: inline-block;
-  width: 50%;
-  height: 300px;
-  overflow-y: hidden;
+  width: 62%;
+  height: 500px;
+  overflow: hidden;
   float: left;
 }
 #activities
@@ -126,36 +135,36 @@ $(document).ready(function(){
   $('#note').show();
 
   $('#links1').mouseenter(function() {
-      $('#note').fadeOut(function(){
-        $('#circletext1').fadeIn();
+      $('#note').fadeOut('fast', function(){
+        $('#circletext1').fadeIn('fast');
       });
 
     });
   $('#links1').mouseleave(function() {
-      $('#circletext1').fadeOut(function(){
-        $('#note').fadeIn();
+      $('#circletext1').fadeOut('fast', function(){
+        $('#note').fadeIn('fast');
       });
     });
 
     $('#links2').mouseenter(function() {
-        $('#note').fadeOut(function(){
-          $('#triangle').fadeIn();
+        $('#note').fadeOut('fast', function(){
+          $('#triangle').fadeIn('fast');
         });
       });
     $('#links2').mouseleave(function() {
-        $('#triangle').fadeOut(function(){
-          $('#note').fadeIn();
+        $('#triangle').fadeOut('fast', function(){
+          $('#note').fadeIn('fast');
         });
       });
 
       $('#links3').mouseenter(function() {
-          $('#note').fadeOut(function(){
-            $('#notePreview').fadeIn();
+          $('#note').fadeOut('fast', function(){
+            $('#notePreview').fadeIn('fast');
           });
         });
       $('#links3').mouseleave(function() {
-          $('#notePreview').fadeOut(function(){
-            $('#note').fadeIn();
+          $('#notePreview').fadeOut('fast', function(){
+            $('#note').fadeIn('fast');
           });
         });
 });
@@ -187,10 +196,10 @@ $(document).ready(function(){
           </div>
         </div>
         <div id="previewActivity">
-          <a href="#" id="circletext1"><img src="images/pianoAct.png" border="0" width="300" height="300" /></a>
-          <a href="#" id="triangle"><img src="images/instr.png" border="0" width="300" height="300" /></a>
-          <a href="#" id="notePreview"><img src="images/NoteActivityPreview.png" border="0" width="300" height="300" /></a>
-          <img src="images/HCI.png" border="5" width="300" height="300" id="note"/>
+          <a href="#" id="circletext1"><img src="images/pianoAct.png" border="0" width="100%" height="500" /></a>
+          <a href="#" id="triangle"><img src="images/instrFamilyPreview.png" border="0" width="100%" height="500" /></a>
+          <a href="#" id="notePreview"><img src="images/NoteActivityPreview.png" border="0" width="100%" height="500" /></a>
+          <img src="images/HCI.png" border="5" width="100%" height="500" id="note"/>
         </div>
         <div id="row2Activity">
           <div id="activity2" class="newActivity">
