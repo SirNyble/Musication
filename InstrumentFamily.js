@@ -20,25 +20,28 @@ function drop(ev) {
     var data = ev.dataTransfer.getData("text");
 
     //Check if image is there!!
-    //if()
-
+    var parentDiv = $("#" + ev.target.id).parent();
     //allow for dropping in the box pool!!
     if(data != ev.target.id)
     {
+
       var draggedFamilyClass = $("#" + data).attr('class');
       var divFamilyClass = ev.target.className;
-      console.log("Dragged: " + draggedFamilyClass);
-      console.log("div: " + divFamilyClass);
-      if(divFamilyClass.indexOf(draggedFamilyClass) > -1   )
+
+      //if($(divFamilyClass).attr("class")."instrumentBox"))
+      console.log("DraggedFamilyClass: " + draggedFamilyClass);
+      console.log("divFamilyClass: " + divFamilyClass);
+      if(divFamilyClass.indexOf(draggedFamilyClass) > -1  && divFamilyClass.indexOf("instrumentBox") > -1 )
       {
-        $("div #" + ev.target.id).css("border", "5px solid green");
+        $("#" + ev.target.id).css("border", "5px solid green");
         console.log("Correct family!");
       }
       else {
-        $("div #" + ev.target.id).css("border", "5px solid red");
+        $("#" + ev.target.id).css("border", "5px solid red");
         console.log("Wrong family");
       }
       ev.target.appendChild(document.getElementById(data));
+      //console.log('Children size: ' + $("#" + ev.target.id).children().size());
     }
     else
     {
@@ -49,7 +52,7 @@ function drop(ev) {
       console.log("div: " +  divFamilyClass);
       //console.log("Same movement: " + draggedFamilyClass);
       //this.indexOf(s) > -1
-      if(divFamilyClass.indexOf(draggedFamilyClass) > -1  )
+      if(draggedFamilyClass.indexOf(divFamilyClass) > -1  )
       {
         $("#" + parent).css("border", "5px solid green");
         console.log("Correct family!");
