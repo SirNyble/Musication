@@ -135,37 +135,31 @@ $(document).ready(function(){
   $('#note').show();
 
   $('#links1').mouseenter(function() {
-      $('#note').fadeOut('fast', function(){
-        $('#circletext1').fadeIn('fast');
-      });
+      $('#note').hide();
+      $('#circletext1').fadeIn('fast');
 
     });
   $('#links1').mouseleave(function() {
-      $('#circletext1').fadeOut('fast', function(){
-        $('#note').fadeIn('fast');
-      });
+      $('#circletext1').hide();
+      $('#note').fadeIn('fast');
     });
 
     $('#links2').mouseenter(function() {
-        $('#note').fadeOut('fast', function(){
-          $('#triangle').fadeIn('fast');
-        });
+        $('#note').hide();
+        $('#triangle').fadeIn('fast');
       });
     $('#links2').mouseleave(function() {
-        $('#triangle').fadeOut('fast', function(){
-          $('#note').fadeIn('fast');
-        });
+        $('#triangle').hide();
+        $('#note').fadeIn('fast');
       });
 
       $('#links3').mouseenter(function() {
-          $('#note').fadeOut('fast', function(){
-            $('#notePreview').fadeIn('fast');
-          });
+          $('#note').hide();
+          $('#notePreview').fadeIn('fast');
         });
       $('#links3').mouseleave(function() {
-          $('#notePreview').fadeOut('fast', function(){
+          $('#notePreview').hide();
             $('#note').fadeIn('fast');
-          });
         });
 });
 

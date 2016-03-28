@@ -1,5 +1,6 @@
 
 var parent = "";
+var numCorrect = 0;
 function allowDrop(ev) {
     ev.preventDefault();
 }
@@ -34,11 +35,26 @@ function drop(ev) {
       if(divFamilyClass.indexOf(draggedFamilyClass) > -1  && divFamilyClass.indexOf("instrumentBox") > -1 )
       {
         $("#" + ev.target.id).css("border", "5px solid green");
+        console.log("BLAH: " + $("#" + data).attr("draggable"));
+         $("#" + data).attr("draggable", "False");
         console.log("Correct family!");
+        $("#neutral").hide();
+        $("#wrong").hide();
+        $("#correct").show();
+        numCorrect++;
+        if(numCorrect == 4)
+        {
+          console.log("AYYAYA");
+          //$(body).modal("<img src='images/HCI.png' style=''/>");
+          $("#container").modal({opacity:80,overlayCss: {backgroundColor:"#fff"}});
+        }
       }
       else {
         $("#" + ev.target.id).css("border", "5px solid red");
         console.log("Wrong family");
+        $("#neutral").hide();
+        $("#wrong").show();
+        $("#correct").hide();
       }
       ev.target.appendChild(document.getElementById(data));
       //console.log('Children size: ' + $("#" + ev.target.id).children().size());
@@ -56,10 +72,17 @@ function drop(ev) {
       {
         $("#" + parent).css("border", "5px solid green");
         console.log("Correct family!");
+        $("#neutral").hide();
+        $("#wrong").hide();
+        $("#correct").show();
+        numCorrect++;
       }
       else {
         $("#" + parent).css("border", "5px solid red");
-        console.log("Wrong family");
+        console.log("Wrong f bvamily");
+        $("#neutral").hide();
+        $("#wrong").show();
+        $("#correct").hide();
       }
     }
 
