@@ -2,7 +2,7 @@ var totalBeat = 0;
 $(document).ready(function(){
   console.log("blah");
   $('.beat').on('click', function(){
-
+    $(".instrumentBoxScrambled").css({"border-color": "rgba(0, 0, 0, 0.3)"});
     if(totalBeat + parseFloat(this.id) <= 1)
     {
       totalBeat += parseFloat(this.id);
@@ -33,6 +33,11 @@ $(document).ready(function(){
         $("#notes").append(
           "<div class='sixteenthNote'><img class='sixteenthNoteImage' src='images/sixteenthNote.png'></div>");
       }
+      console.log($("#" + this.id).parent());
+      $(this).parent().css({"border-color": "green"});
+    }
+    else {
+      $(this).parent().css({"border-color": "red"});
     }
     console.log("total: " + totalBeat);
     //$(this).addClass('note');
@@ -41,6 +46,7 @@ $(document).ready(function(){
 
   $("#reset").on("click", function(){
       $("#notes").html("");
+      $(".instrumentBoxScrambled").css({"border-color": "rgba(0, 0, 0, 0.3)"});
       totalBeat = 0;
   });
 });
