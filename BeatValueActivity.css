@@ -1,13 +1,27 @@
 
 #measure
 {
-  width: 550px;
+  width: 70%;
   height: 155px;
   margin-left: 10%;
-  margin-top: 9%;
+  /*margin-top: 9%;*/
   background-color: white;
   border: solid 2px;
+  display:inline-block;
+  float: left;
 }
+#measure::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#check{
+  display: inline-block;
+  float: left;
+  width: 18%;
+}
+
 #container{
   text-align: center;
   display: block;
@@ -124,7 +138,8 @@
 {
   display: inline-block;
   float: left;
-  width: 10%;
+  width: 100%;
+  margin-top: 5%;
 
 }
 

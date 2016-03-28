@@ -1,6 +1,8 @@
 var totalBeat = 0;
 $(document).ready(function(){
   console.log("blah");
+  $("#check").hide();
+
   $('.beat').on('click', function(){
     $(".instrumentBoxScrambled").css({"border-color": "rgba(0, 0, 0, 0.3)"});
     if(totalBeat + parseFloat(this.id) <= 1)
@@ -39,6 +41,12 @@ $(document).ready(function(){
     else {
       $(this).parent().css({"border-color": "red"});
     }
+
+    //Check if we are done!
+    if(totalBeat == 1)
+    {
+      $(check).fadeIn();
+    }
     console.log("total: " + totalBeat);
     //$(this).addClass('note');
     //console.log("has note: " + $(this).hasClass('note'));
@@ -46,6 +54,7 @@ $(document).ready(function(){
 
   $("#reset").on("click", function(){
       $("#notes").html("");
+      $(check).fadeOut();
       $(".instrumentBoxScrambled").css({"border-color": "rgba(0, 0, 0, 0.3)"});
       totalBeat = 0;
   });
