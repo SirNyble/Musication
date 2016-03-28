@@ -19,11 +19,15 @@ function dragLeave(ev) {
 function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
+    var answerArray = ["windAnswer1","windAnswer2","windAnswer3","windAnswer4",
+                       "brassAnswer1","brassAnswer2","brassAnswer3","brassAnswer4",
+                       "stringAnswer1", "stringAnswer2", "stringAnswer3", "stringAnswer4",
+                       "percussionAnswer1","percussionAnswer2","percussionAnswer3","percussionAnswer4"];
 
     //Check if image is there!!
     var parentDiv = $("#" + ev.target.id).parent();
     //allow for dropping in the box pool!!
-    if(data != ev.target.id)
+    if( (data != ev.target.id) && (answerArray.indexOf(ev.target.id) > -1) )
     {
 
       var draggedFamilyClass = $("#" + data).attr('class');
