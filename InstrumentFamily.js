@@ -46,12 +46,7 @@ function drop(ev) {
         $("#wrong").hide();
         $("#correct").show();
         numCorrect++;
-        if(numCorrect == 4)
-        {
-          console.log("AYYAYA");
-          //$(body).modal("<img src='images/HCI.png' style=''/>");
-          $("#container").modal({opacity:80,overlayCss: {backgroundColor:"#fff"}});
-        }
+
       }
       else {
         $("#" + ev.target.id).css("border", "5px solid red");
@@ -88,6 +83,14 @@ function drop(ev) {
         $("#wrong").show();
         $("#correct").hide();
       }
+    }
+
+    if(numCorrect == 16)
+    {
+      console.log("AYYAYA");
+      $("div #imageList").hide().html('<div id="winner"><img id="correct" src="images/cool.png" width="250" height="250"/></div>').fadeIn('slow');
+      //$(body).modal("<img src='images/HCI.png' style=''/>");
+      $("#container").modal({opacity:80,overlayCss: {backgroundColor:"#fff"}});
     }
 
 }
