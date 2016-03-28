@@ -39,7 +39,8 @@ $(document).ready(function(){
       $(this).parent().css({"border-color": "green"});
     }
     else {
-      $(this).parent().css({"border-color": "red"});
+      if(totalBeat < 1)
+        $(this).parent().css({"border-color": "red"});
     }
 
     //Check if we are done!
